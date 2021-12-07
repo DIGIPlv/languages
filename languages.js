@@ -27,7 +27,7 @@ window.onload = function() {
   let url = new URL(href);
   let lang = url.searchParams.get('lang');
   if (lang == 'EN' ) {
-    document.getElementById('hero-title').innerHTML = 'I’m 3D augmented reality buildings in Liepaja';
+    document.getElementById('hero-title').innerHTML = '3D augmented reality buildings in Liepaja';
     document.getElementById('share').innerHTML = 'Share:';
     document.getElementById('subheading').innerHTML = `Get to know the history of Liepaja with "3D ēkas Liepājā"`;
     let about = document.getElementById('about-project');
