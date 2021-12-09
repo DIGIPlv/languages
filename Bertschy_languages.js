@@ -57,14 +57,14 @@ window.onload = function() {
     document.getElementById('how-city-heading').innerHTML = 'How to see buildings in an urban environment?';
     let howCity = document.getElementById('how-city-paragraph');
     howCity.firstElementChild.remove();
-    howCity.insertAdjacentHTML("afterbegin", `<div class="rich-txt-blog w-richtext"><p>To view any building in the urban environment, it is necessary to be located near the historical location of the building, closer than 50m. When you are closer than 50m, the button "Ievietot ēku" will appear on the button of the available building. All buildings use red controls, which must be used to place the buildings in their old location."</p></div>`);
+    howCity.insertAdjacentHTML("afterbegin", `<div class="rich-txt-blog w-richtext"><p>To view any building in the urban environment, it is necessary to be located near the historical location of the building, closer than 30m. When you are closer than 30m, the button "Ievietot ēku" will appear on the button of the available building. All buildings use red controls, which must be used to place the buildings in their old location."</p></div>`);
     document.getElementById('how-building-1-heading').innerHTML = 'How to view Multifunctional hotel "Kūrmaja"?';
     document.getElementById('step-1-1').innerHTML = 'Step 1';
     document.getElementById('step-1-2').innerHTML = 'Step 2';
     document.getElementById('step-1-3').innerHTML = 'Step 3';
     document.getElementById('txt-1-1').innerHTML = 'Go to the circle at the end of Kūrmājas Avenue in Liepāja';
     document.getElementById('txt-1-2').innerHTML = 'Stand here with a view towards the monument';
-    document.getElementById('txt-1-3').innerHTML = 'Position the phone so that the red controls correspond to the corner of the flower bed and press the "Ievietot" button';
+    document.getElementById('txt-1-3').innerHTML = 'Position the phone so that the red controls correspond to the flower bed and press the "Ievietot" button';
     document.getElementById('how-building-2-heading').innerHTML = 'How to view Exchange House?';
     document.getElementById('step-2-1').innerHTML = 'Step 1';
     document.getElementById('step-2-2').innerHTML = 'Step 2';
