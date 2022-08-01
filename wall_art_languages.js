@@ -76,5 +76,9 @@ window.addEventListener("load", () => {
     let eula = document.getElementById("eula");
     eula.firstElementChild.remove();
     eula.insertAdjacentHTML("afterbegin", `<div class="rich-txt-blog txt_align_centred mt_80 w-richtext"><p><a href="/projekti/wall-art-liepaja-gala-lietotaja-licences-ligums">EULA</a></p><p><a href="/projekti/wall-art-liepaja-gala-lietotaja-licences-ligums">&zwj;</a><a href="https://www.digip.lv/projekti/wall-art-liepaja-gala-lietotaja-licences-ligums"><strong>&zwj;</strong></a>Use email address <a href="mailto:team@digip.lv">team@digip.lv</a>, to contact us in case of uncertainty, in matters related to marketing and when you need support.</p><p>&zwj;</p></div>`);
+    let mapBtns = document.getElementsByClassName("btn__txt-arrow");
+    for(let i = 0; i < mapBtns.length; i++){
+      mapBtns[i].innerHTML = "Find in Google Maps";
+    }
   }
 });
