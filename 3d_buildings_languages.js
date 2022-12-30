@@ -1,6 +1,6 @@
 // Language changer
 window.onload = function() {
-  let navBar = document.getElementsByClassName("nav__wrap-links")[2];
+  let navBar = document.getElementsByClassName("nav__wrap-links")[0];
   let links = document.createElement("div");
   links.setAttribute("class", "nav__wrap-link");
   links.classList.add("language");
