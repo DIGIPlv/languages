@@ -98,7 +98,7 @@ window.onload = function() {
       image.firstElementChild.remove();
       image.insertAdjacentHTML("afterbegin", `<div class="rich-txt-blog w-richtext"><p>You can view all the buildings in a small size by placing them on an image.</p><ol start="" role="list"><li>Print out the image or open it on another device's screen;</li><li>Open the "3D kultūrēkas " app;</li><li>Choose "Place buildings" – "On image";</li><li>Aim your phone's camera at the image</li><li>The building will automatically be placed on the image and follow it.</li></ol></div>`);
       document.getElementById('subscript-first').innerHTML = 'Image from Liepaja Museum';
-      document.getElementById('subscript-secound').innerHTML = 'Image from Liepaja Museum';
+      document.getElementById('subscript-secound').innerHTML = 'Picture from Open Public Fund "Liepaja Jewish Heritage"';
       document.getElementById('subscript-third').innerHTML = 'Picture from Open Public Fund "Liepaja Jewish Heritage"';
     }
   }
