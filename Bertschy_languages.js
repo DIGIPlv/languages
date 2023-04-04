@@ -1,11 +1,14 @@
 // Language changer
 window.onload = function() {
-  let navBar = document.getElementsByClassName("nav__wrap-links")[0];
+  let navBar = document.getElementsByClassName("nav-bar__container")[0];
   let links = document.createElement("div");
   links.setAttribute("class", "nav__wrap-link");
   links.classList.add("language");
+  links.style.flex = "0";
   let navLinkLV = document.createElement("div");
   navLinkLV.setAttribute("class", "nav__item");
+  navLinkLV.style.display = "flex";
+  navLinkLV.style.alignItems = "center";
   let linkLV = document.createElement("a");
   linkLV.setAttribute("href", "/projekti/3d-berci-ekas");
   linkLV.setAttribute("class", "navigation-item");
@@ -14,6 +17,8 @@ window.onload = function() {
   links.append(navLinkLV);
   let navLinkEN = document.createElement("div");
   navLinkEN.setAttribute("class", "nav__item");
+  navLinkEN.style.display = "flex";
+  navLinkEN.style.alignItems = "center";
   let linkEN = document.createElement("a");
   linkEN.setAttribute("href", "/projekti/3d-berci-ekas?lang=EN");
   linkEN.setAttribute("class", "navigation-item");
@@ -22,6 +27,17 @@ window.onload = function() {
   navLinkEN.append(linkEN);
   links.append(navLinkEN);
   navBar.append(links);
+  // Form mobile menu 
+  let mobileMenu = document.getElementsByClassName("nav-bar__container_submenu")[1];
+  console.log(mobileMenu);
+  let wrapMobile = document.createElement("div");
+  wrapMobile.setAttribute("class", "nav-bar__sublink_narrow");
+  let linksMobile = links.cloneNode(true);
+  linksMobile.style.flexDirection = "row";
+  linksMobile.style.justifyContent = "center";
+  linksMobile.style.margin = 0;
+  wrapMobile.append(linksMobile)
+  mobileMenu.append(wrapMobile);
   // Get language
   let href = window.location.href;
   let url = new URL(href);
