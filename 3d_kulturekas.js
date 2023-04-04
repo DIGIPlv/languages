@@ -28,7 +28,6 @@
     navBar.append(links);
     // Form mobile menu 
     let mobileMenu = document.getElementsByClassName("nav-bar__container_submenu")[1];
-    console.log(mobileMenu);
     let wrapMobile = document.createElement("div");
     wrapMobile.setAttribute("class", "nav-bar__sublink_narrow");
     let linksMobile = links.cloneNode(true);
